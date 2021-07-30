@@ -47,6 +47,19 @@ $result = $conn->query($sql);
 <br><br>
 <input type="submit" value=" Backward &nbsp" id="botton4" onclick="alert('b')">
 
+ <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "e05e660a-5849-463b-80d7-e900a6121654", // The ID of this integration.
+      region: "eu-de", // The region your integration is hosted in.
+      serviceInstanceID: "b12d30b0-622f-41cd-bd34-2cae2fdefe03", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 </style>
 
     </center>
